@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Method</title>
+    <link rel="website icon" type="png" href="image\fashion.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="css\Payment.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="index.html" class="logo"> <i class="fas fa-t-shirt"></i> Mirror </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box" />
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+                <a href="login.html" class="fas fa-user"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-payment">
+        <div class="card__container">
+            <div class="card">
+                <div class="row Dana">
+                    <div class="left">
+                        <input id="pp" type="radio" name="payment" />
+                        <div class="radio"></div>
+                        <label for="pp">Dana</label>
+                    </div>
+                    <div class="right">
+                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj10i8Btb-dl9eXZNX3Wyn2g_fM28L9bHQOJ37eW7eHhVqNhYdndDf40Ba4Zm88GyKR1bhvbtWmF-fY61RbMnHhP-ea9wJbrZYlg1BLD5xqToO4KE85LbfHbZf6J7R8MdkKcICrdyr8WpBFGw_ujAM-zcmWy8ssLC4Sv8C1nzrL1jtrsNLzyqm6Rr4T=s300"
+                            alt="Dana" />
+                    </div>
+                </div>
+                <div class="row credit">
+                    <div class="left">
+                        <input id="cd" type="radio" name="payment" />
+                        <div class="radio"></div>
+                        <label for="cd">Debit/ Credit Card</label>
+                    </div>
+                    <div class="right">
+                        <img src="https://www.freepnglogos.com/uploads/visa-inc-logo-transparent-png-19.png"
+                            alt="visa" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMD2VKtLgKbfFAiOWATQbRtBzeNbl9xuYLBvYPlOuv8MKzpqg&s"
+                            alt="mastercard" />
+                        <img src="https://seeklogo.com/images/G/gpn-logo-36CC6EB701-seeklogo.com.png" alt="Gpn" />
+                    </div>
+                </div>
+                <div class="row cardholder">
+                    <div class="info">
+                        <label for="cardholdername">Name</label>
+                        <input placeholder="Cth:Firman Naufal Aryaputra" id="cardholdername" type="text" />
+                    </div>
+                </div>
+                <div class="row number">
+                    <div class="info">
+                        <label for="cardnumber">Card number</label>
+                        <input id="cardnumber" type="text" maxlength="19" placeholder="Cth:8888-8888-8888-8888" />
+                    </div>
+                </div>
+                <div class="row details">
+                    <div class="left">
+                        <label for="expiry-date">Expiry</label>
+                        <select id="expiry-date">
+                            <option>MM</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <span>/</span>
+                        <select id="expiry-date">
+                            <option>YYYY</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                    <div class="right">
+                        <label for="cvv">CVC/CVV</label>
+                        <input type="text" maxlength="4" placeholder="Cth:1234" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <a href="success.html"><button type="submit"><i class="fa-solid fa-unlock-keyhole"></i> Confirm and
+                    Pay</button></a>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.facebook.com/firman.n.aryaputra" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/firmanarpp" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/firmanarpp/" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://github.com/FirmanNaufal" target="_blank" class="fa-brands fa-github"></a>
+        </div>
+
+        <div class="credit">
+            Copyright &copy; 2022 <span>Firman Naufal</span>, all rights reserved.
+        </div>
+    </section>
+
+    <script src="js\script.js"></script>
+</body>
+
+</html>
